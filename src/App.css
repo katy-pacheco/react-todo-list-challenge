@@ -1,0 +1,37 @@
+.page {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+  background-color: #f4f7fa;
+  padding: 32px;
+}
+
+.container {
+  width: 100%;
+  max-width: 800px;
+  background: var(--white-color);
+  border-radius: 12px;
+  padding: 32px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+}
+
+.page-header {
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.page-title {
+  font-weight: 600;
+  color: var(--dark-color);
+}
+
+.page-subtitle {
+  font-size: 16px;
+  color: var(--light-color);
+  margin-top: 10px;
+}
+
+.main-content > *:not(:last-child) {
+  margin-bottom: 24px;
+}
