@@ -1,0 +1,74 @@
+.searchWrapper {
+  position: relative;
+  margin-bottom: 24px;
+}
+
+.searchIcon {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  padding-left: 8px;
+  height: 100%;
+}
+
+.searchInput {
+  width: 100%;
+  padding: 12px 16px 12px 40px;
+  color: var(--dark-color);
+  border: 1px solid var(--light-color);
+  border-radius: 4px;
+  outline: none;
+}
+
+.searchInput:focus {
+  border-color: var(--dark-color);
+  background-color: var(--white-color);
+}
+
+.tabs {
+  display: flex;
+  border-bottom: 1px solid var(--light-color);
+}
+
+.tabButton {
+  flex: 1;
+  padding: 4px 14px;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 500;
+  background: none;
+  border: none;
+  color: var(--dark-color);
+  cursor: pointer;
+  position: relative;
+  transition: color 0.2s;
+}
+
+.tabButtonActive {
+  color: var(--background-color);
+  font-weight: 600;
+}
+
+.tabButton:not(.tabButtonActive):hover {
+  color: var(--background-color);
+}
+
+.tabCount {
+  margin-left: 4px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2px 8px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.tabUnderline {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: var(--background-color);
+  transition: all 0.2s;
+}
